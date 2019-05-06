@@ -1,49 +1,130 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="es">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/custom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-		<script src="js/reveal.js"></script>
+    <style>
+        .imagenes_diapositiva {
+            border: none !important;
+            background: none !important;
+        }
+    </style>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-transition="zoom">
+                <h1>Mi presentación</h1>
+                <h2>Fabián Moreno Islas</h2>
+                <h2>A01273925</h2>
+                <h2>Arturo Pérez Sirvent</h2>
+                <h2>A01273864</h2>
+                <p>Parrafos</p>
+
+                <p><small>Texto Pequeño</small></p>
+            </section>
+            <section data-background-transition="zoom">Slide 2</section>
+            <section>
+                <h1>Mi presentación</h1>
+                <h2>Mi presentación</h2>
+                <p>Parrafos</p>
+            </section>
+
+            <section data-background-transition="zoom">
+                <h1>Mi presentación</h1>
+                <h2>Mi presentación</h2>
+                <p>Parrafos</p>
+                <p><small>Texto Pequeño</small></p>
+            </section>
+            <section data-background-transition="zoom">Slide 2</section>
+            <section id="fragmentos">
+                <h1>Mi presentación</h1>
+                <h2>Mi presentación</h2>
+                <ul>
+                    <li class="fragment grow">1</li>
+                    <li class="fragment shrink">2</li>
+                    <li class="fragment">3</li>
+                    <li class="fragment">4</li>
+                </ul>
+                <p>Parrafos</p>
+            </section>
+
+            <section>
+
+                <section data-background-transition="zoom">
+                    <h1>Mi presentación</h1>
+                    <h2>Mi presentación</h2>
+                    <p>Parrafos</p>
+                    <p><small>Texto Pequeño</small></p>
+                </section>
+                <section data-background-transition="zoom">Slide 2</section>
+                <section>
+                    <h1>Mi presentación</h1>
+                    <h2>Mi presentación</h2>
+                    <p>Parrafos</p>
+                </section>
+
+                <section data-background-transition="zoom">
+                    <h1>Mi presentación</h1>
+                    <h2>Mi presentación</h2>
+                    <p>Parrafos</p>
+                    <p><small>Texto Pequeño</small></p>
+                </section>
+                <section data-background-transition="zoom">Slide 2</section>
+                <section>
+                    <h1>Mi presentación</h1>
+                    <h2>Mi presentación</h2>
+                    <p>Parrafos</p>
+                </section>
+
+            </section>
+
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true
+            }]
+        });
+    </script>
+</body>
+
 </html>
